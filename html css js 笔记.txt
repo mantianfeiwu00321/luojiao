@@ -1,0 +1,74 @@
+html:
+
+1.<img>图像，要显示出图像一定要有src. alt属性是预备的可替换文本。 <img src="boat.img" alt="boat">
+
+2.table. <tr>表示行，<td>表示列，数据单元格的内容。<th>表头。边框 border="1"
+
+3.无序列表：一个项目的列表。无序列表始于<ul>标签，每个列表（行）始于<li>标签。   
+
+   有序列表。有序列表始于<ol>标签，每行始于<li>标签。
+
+4.<div>块级元素，可用于HTML布局，和table功效差不多。
+
+5.html中注释<!-- -->
+
+6.表单标签<form>,输入标签<input>。  下拉列表<select>,中间放<option>代表下拉列表项。 
+
+7.<link>标签定义文档与外部资源间的关系。 <link rel="stylesheet" type="text/css" href="mystyle.css" >
+
+ ```````````````````````````````````````````````````````````````````````````
+
+css(层叠样式表):
+
+1.常用选择器：
+
+（1）.[attribute]用于选取指定元素的元素；
+
+（2）.[attribute=value]选取带有指定元素和值的元素；
+
+（3）.[attribute=~value]选取包含value的元素；
+
+（4）.[attribute|=value]选取以value开头的元素，value值必须是整个单词；
+
+2.属性值和单位之间不要留空格。如：margin-left: 20px;错误；margin-left:20px;正确
+
+3.background-color背景色;background-image;  backgrond-attachment:fixed 把图像固定到可视区，防止图像滚动。
+
+4.链接的状态顺序，a:link;  a:visited; a:hover; a:active        text-decoration：none去掉链接的下划线
+
+5.列表： list-style-type; list-style-image;
+
+6.框模型：
+
+
+
+7.  *.classname和.classname的作用是一样的，选择所有class的值是classname的class。可以为任意多个元素指定类，如h1,p都可以指定
+
+8. opacity显示不透明度。eg：div[opacity:0.5;]
+
+```````````````````````````````````````````````````````````````````````````
+
+ javascript笔记
+
+1. document.getElementById("some id");
+
+2.document.write("<p>write something</p>");  或  document.getElementById("some id").innerHTML="welcome to my homepage";在javascript写，在页面中显示出文字,前者为在新的页面显示文字，后者是在“some id”那里显示；
+
+3.javascript可放在head和body中，， 一般把javascript的函数放在head中或body底部。
+
+4.引用外部的javascript，，，<script type="text/script"   src="/js/haha.js"></script>
+
+5.用var来声明变量，eg：var name;  再赋值name="Bill";当向变量分配的是文本值时，应加双引号或单引号将这个文本值包围，eg: var x="Bill";    当向变量分配的是数字时，不加引号。eg:var pi=3.141;
+
+```````````````````````````````````````````````````````````````````````````
+
+jquery笔记
+1.  uncompressed development jquery 1.11.0 ,,,src="http://code.jquery.com/jquery-1.11.0.js"
+
+2.   $("ul li:first") :每个ul的第一个li元素。  
+
+3.   toggle()方法可切换hide()和show()的关系。同样：fadeToggle()可切换fadeIn()和fadeOut()的关系。 fadeTo("slow",0-1之间半透明)。 slideDown()、slideUp()和slideToggle()上下滑动。
+
+4.  class 属性是.     id属性是#        alert("sth");           attr("属性")；显示出这个属性的值
+
+5.  text();文本内容          html();文本内容连同html标记一起      val();获取input表单的内容   （括号里面加内容，就可以修改了）
