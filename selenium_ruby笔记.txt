@@ -1,0 +1,39 @@
+1.定义一个对象findElement  ;    定义一组对象findElements  ；tagname指form/div/label那些。
+
+2. selenium1就是selenium RC。   selenium2=selenium+webdriver,属于google.
+
+3. Webdriver工作原理，浏览器内部有一个server(driver),充当翻译的作用，使得code能和浏览器沟通。
+
+4.安装完ruby后，打开控制台，输入命令ruby -v，可查看到ruby版本号;gem -v查看gem是否装好      gem update --system，升级gem。
+
+gem install selenium-webdriver，安装webdriver         gem list selenium-webdriver查看webdriver列表。     
+
+查看server文档资料 1.输入gem server 2.在浏览器中输入http://localhost:8808
+
+ 5.轻量级文本编辑器：SciTE ，，F5. 代码结束不用加分号。
+
+ 6.dr.find_element(:xpath, %Q{//div[@class='gray']}).flash
+
+7.dr.find_element(:css,'.gray').flash
+
+8. button   (1)submint button : <input type="submit"/>      (2)normal button:   <button></button>
+
+9.ctrl+D拷贝。 ctrl+q注释代码。 
+
+10.下拉列表默认选项selected="true"       复选框checked="true"
+
+11.获取dom元素的属性用attribute
+
+12. 转到frame上：   switch_to.frame(frame_id)         将焦点跳转回大页面： switch_to.default_content
+
+13.处理js弹出框   alert=switch_to.alert         再调用alert.accept或alert.dismiss
+
+14.截全图：driver.save_screenshot（'.\qq.png'） 保存截图名称为qq.png
+
+15. find_elements(:css,'input[type=checkbox]')
+
+16.层级定位：element.find_element或element.find_elements
+
+17. 断言assert：判断实际结果是否等于预期结果。
+
+ 
