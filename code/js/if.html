@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<p>click here</p>
+<button onclick="myFunction()">click here</button>
+<p id="demo"></p>
+<script>
+function myFunction()
+{
+var x="";
+var time=new Date().getHours();
+if (time<20)
+{x="Good day"}
+else
+{x="Good evening"}
+document.getElementById("demo").innerHTML=x;
+	}
+
+</script>
+
+</body>
+</html>

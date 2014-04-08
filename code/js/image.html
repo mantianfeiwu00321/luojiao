@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+<title></title>
+</head>
+<body>
+
+<script>
+element=document.getElementById('myimage')
+if (element.src.match("bulbon")){
+element.src="/i/eg_bulboff.gif"; 
+
+}
+else
+{element.src="/i/eg_bulbon.gif"};
+</script>
+
+<img id="myimage" onclick="changeImage()" src="/i/eg_bulboff.gif">
+<p>click</p>
+
+
+</body>
+</html>
