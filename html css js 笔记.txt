@@ -1,5 +1,5 @@
 html:
-
+所得到的
 1.<img>图像，要显示出图像一定要有src. alt属性是预备的可替换文本。 <img src="boat.img" alt="boat">
 
 2.table. <tr>表示行，<td>表示列，数据单元格的内容。<th>表头。边框 border="1"
